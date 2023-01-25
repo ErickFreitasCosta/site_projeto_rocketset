@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 3px;  /* Tira todos os espaçamentos internos de todas as caixas do projeto*/
+    box-sizing: border-box;  /* Desconsidera o espaçamento existente e só fica oq ,eu definir*/
+}
+body{
+    background-color: black;
+    color: white; 
+    /*display: grid;*/
+    /*place-items: center;*/   /* Deixa os itens alinhados no meio da tela*/
+    height: 100vh;          /* Deixa a 100% da tela*/
+  }
+#face{
+    margin-top: 100%;
+    margin-right: 90%;
+  }
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*Pega o espaço total da página e separa */
+  margin-bottom: 20px;
+  position: fixed;      /* Para manter fixo na tela a parte do cabeçalho*/
+  background-color: black;
+  width: 100%;
+}
+#form-habits{
+  display: flex;
+  padding-bottom: 48px;
+  margin-top: 96px;   /* Para se distânciar do cabeçalho*/
+}
+.habits{
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 68px;  /* Distância do top até os emotes*/
+}
+.habit{
+ /* border: solid 1px red;*/
+  height: 64px;
+  width: 64px;
+  font-size: 32px;   /*O emote é como se fosse uma fonte*/
+  display: flex;
+  align-items: center;  /* Alinhar os itens*/
+  justify-content: center; /* Centralizar os itens*/
+}
+.days{
+  display: flex;  /* Deixa um do lado do outro*/
+  text-align: center;
+  gap: 28px;   /*Como já é flex vai dá um espaço de pixels*/
+  margin-left: 30px;
+}
+.day{
+  display: flex;   /* Deixa um ao lado do outro*/
+  flex-direction: column;  /* Isso muda a direção para coluna*/
+  gap: 28px;
+}
+.day div{
+  margin-bottom: 8px;
+  font-family: 'Roboto Mono';
+  font-size: 20px;
+  color: #a1a1aa;
+}
+
+
+button{
+  padding: 10px 20px;
+  border-radius: 8px;   /* É o arredondamento dos botões*/
+  border: solid 1px #8b5cf6;
+  background-color: transparent;
+  color: white;
+  display: flex;  /* Vai deixar tudo que está no button flexível*/
+  align-items: center; /* Vai alinhar os itens dentro do button*/
+  font-family: 'Inter';
+  gap: 12px; /* É o espaçamento ,mas só pode quando o elemento é flex*/
+}
+input{
+  appearance: none; /* Tira a aparência do botão*/
+  background-color: #18181b;
+  border: solid 2px #27272a;
+  height: 64px;
+  width: 64px;
+  border-radius: 8px;
+}
+input:checked{
+  background-color: #8b5cf6;
+  border: solid 1px #a78bfa;
+}
